@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // reassemble a string from the valid characters typed by the user
             const newValue = currentText.join("");
-            const intValue = parseInt(newValue);
+            const intValue = parseInt(newValue, base);
 
             // Update all the inputs with their new values
             updateAllInputs(intValue);
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         for (let input of inputs) {
             const base = parseInt(input.getAttribute('data-base'));
-            const newValue = intValue.toString(base).toUpperCase();
+            const newValue = intValue.toString(base);
             input.value = newValue;
         }
     }

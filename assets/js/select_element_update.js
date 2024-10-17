@@ -1,15 +1,20 @@
 // The possible colours for each type of vehicle
 const COLOURS = {
     car: [
-        "Dusky Rose", "Moonlit Pearl", "Lavender Mist", "Burgundy Bliss",
-        "Sapphire Gleam", "Tangerine Dream", "Mystic Teal", "Golden Ember",
+        "Dusky Rose",
+        "Moonlit Pearl",
+        "Lavender Mist",
+        "Burgundy Bliss",
+        "Sapphire Gleam",
+        "Tangerine Dream",
+        "Mystic Teal",
+        "Golden Ember",
     ],
     van: ["White", "Navy"],
 };
 
 // Event listener fires when the HTML content has loaded.
 document.addEventListener("DOMContentLoaded", () => {
-
     // Get references to the vehicle radio buttons and the select element
     const vehicleButtons = document.getElementsByName("vehicle-type");
     const colourSelector = document.getElementById("colour-selector");
@@ -24,11 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /**
      * A function that accepts a vehicle and populates the select options
-     * 
-     * @param {string} vehicle 
+     *
+     * @param {string} vehicle
      */
     const updateColourOptions = (vehicle) => {
-
         // Remove all but the first (informational) option
         const colours = COLOURS[vehicle];
         while (colourSelector.options.length > 1) {
@@ -47,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Update the vehicle name in the first option (the info option)
         const infoOption = colourSelector.options[0];
         infoOption.text = "Choose a colour for your " + vehicle;
-    }
+    };
 
     // Run our function when the page loads to first populate the select element
     updateColourOptions("car");

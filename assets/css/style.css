@@ -1,0 +1,17 @@
+body {
+    margin-top: 56px;
+}
+
+pre {
+    margin-top: 100px;
+}
+
+.comment-annotation {
+    position: absolute;
+    top: 2rem;
+    background-color: grey;
+}
+
+.comment-div {
+    display: none;
+}

@@ -1,3 +1,4 @@
+
 // The possible colours for each type of vehicle
 const COLOURS = {
     car: [

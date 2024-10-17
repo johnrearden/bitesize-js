@@ -1,5 +1,6 @@
+
 // The allowed list of characters (or digits)
-const VALID_CHARS = "0123456789abcdefghijklmnopqrstuvwxyz";
+const VALID_CHARS = "0123456789abcdefghijklmnopqrstuvwxy";
 
 
 // Event listener fires when the HTML content has loaded.

@@ -72,6 +72,7 @@
                                 name="decimal"
                                 class="form-control base-input"
                                 data-base="10"
+                                valid-chars="0123456789"
                             />
                         </div>
                         <div class="mb-3">
@@ -82,6 +83,16 @@
                                 name="hexadecimal"
                                 class="form-control base-input"
                                 data-base="16"
+                                valid-chars="0123456789abcdef"
+                            />
+                            <label for="binary">Binary</label>
+                            <input
+                                type="text"
+                                id="binary"
+                                name="binary"
+                                class="form-control base-input"
+                                data-base="2"
+                                valid-chars="01"
                             />
                         </div>
                     </form>
@@ -96,6 +107,9 @@
                     <code class="language-js" id="code-display"></code>
                 </pre>
             </div>
+
+            
+
         </main>
 
         <input type="hidden" value="assets/js/hex_converter.js">

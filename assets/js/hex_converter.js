@@ -1,10 +1,7 @@
 
-// The allowed list of characters (or digits)
-const VALID_CHARS = "0123456789abcdefghijklmnopqrstuvwxy";
-
-
 // Event listener fires when the HTML content has loaded.
 document.addEventListener("DOMContentLoaded", () => {
+
 
     const inputs = document.getElementsByClassName("base-input");
     for (let input of inputs) {
@@ -16,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const base = parseInt(e.target.getAttribute('data-base'));
 
             // Get a copy of the VALID_CHARS string containing only the digits needed for this base
-            const validChars = VALID_CHARS.slice(0, base);
+            const validChars = e.target.getAttribute('valid-chars');
             
             // Turn the current value of the input into an array of characters
             const currentText = e.target.value.split("");
@@ -24,7 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Iterate through this array, checking if the characters the user has typed
             // are valid, and if not, setting them to the empty string
             for (let i = 0; i < currentText.length; i++) {
-                const isValid = validChars.includes(currentText[i]);
+
+                const element = currentText[i];
+
+                const isValid = validChars.includes(element);
+
                 if (!isValid) {
                     currentText[i] = "";
                 }

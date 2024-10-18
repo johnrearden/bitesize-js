@@ -15,3 +15,8 @@ pre {
 .comment-div {
     display: none;
 }
+
+.thing {
+    background-color: lightblue;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+/* .heading-class {
+    color: green;
+} */
+
+#heading-id {
+    color: purple;
+}
+
+/* body #heading-id {
+    color: blue;
+} */

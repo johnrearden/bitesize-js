@@ -16,7 +16,8 @@ pre {
     display: none;
 }
 
-.thing {
-    background-color: lightblue;
-    border-radius: 0.5rem;
+.language-js, .language-markup {
+    max-height: 80vh;
+    overflow-y: scroll;
 }
+

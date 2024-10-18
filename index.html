@@ -59,7 +59,7 @@
                 </div>
             </nav>
         </head>
-        <main class="container">
+        <main class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
                     <h1 class="display-5 mt-5 mb-3">Base Converter</h1>
@@ -99,20 +99,21 @@
                 </div>
             </div>
 
-            <hr class="mt-5">
+            <hr class="mt-5" />
 
-            <div class="mt-5">
-                <h2 class="display-6 d-inline-block">JS Source Code</h2>
-                <pre>
-                    <code class="language-js" id="code-display"></code>
-                </pre>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h2 class="display-6 d-inline-block">JS Source Code</h2>
+                    <pre><code class="language-js" id="code-display-js"></code></pre>
+                </div>
+                <div class="col-6">
+                    <h2 class="display-6 d-inline-block">HTML Source Code</h2>
+                    <pre><code class="language-markup" id="code-display-html"></code></pre>
+                </div>
             </div>
-
-            
-
         </main>
 
-        <input type="hidden" value="assets/js/hex_converter.js">
+        <input type="hidden" value="assets/js/hex_converter.js" />
 
         <!-- Bootstrap Javascript from CDN -->
         <script

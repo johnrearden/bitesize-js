@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Look up the base that this particular input (e.target) is using, and convert to int
             const base = parseInt(e.target.getAttribute('data-base'));
 
-            // Get a copy of the VALID_CHARS string containing only the digits needed for this base
+            // Look up the valid digits for this base from the element's data attr.
             const validChars = e.target.getAttribute('valid-chars');
             
             // Turn the current value of the input into an array of characters

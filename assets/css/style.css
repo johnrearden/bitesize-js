@@ -21,3 +21,7 @@ pre {
     overflow-y: scroll;
 }
 
+.hide {
+    display: none;
+}
+

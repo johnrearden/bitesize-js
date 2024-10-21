@@ -1,15 +1,29 @@
-h1 {
-    color: red;
+:root {
+    box-sizing: border-box;
 }
 
-/* .heading-class {
-    color: green;
-} */
-
-#heading-id {
-    color: purple;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-/* body #heading-id {
-    color: blue;
-} */
+.outer {
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1rem solid red;
+}
+
+.hide {
+    display: none;
+}

@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
             Prism.highlightAll();
         });
 
+    const commentToggleButton = document.querySelector('.toggle-js');
+    console.log(commentToggleButton);
+    if (commentToggleButton) {
+        console.log('adding event listener to toggle-js button');
+        commentToggleButton.addEventListener('click', () => {
+            const comments = document.getElementsByClassName('comment');
+            for (let comment of comments) {
+                console.log('hiding')
+                
+                comment.classList.toggle('hide');
+            }
+            
+    })}
+
     
     
 });

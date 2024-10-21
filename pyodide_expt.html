@@ -76,39 +76,32 @@
         <main class="container-fluid mt-5">
             <div class="row">
                 <div class="col-10 offset-1">
-                    <h1 class="display-5 mb-3">Click to view page and source code together</h1>
-                    <ul>
-                        <li>
-                            <h2 class="display-6">
-                                <a href="hex_converter.html">Hex Converter</a></h2>
-                            <p>
-                                Demonstrates the restriction of user input to a
-                                selection of allowed characters, and updating of
-                                one input based on changes made by the user in
-                                another.
-                            </p>
-                        </li>
-                        <li>
-                            <h2 class="display-6">
-                                <a href="select_element_updater.html">Select Element Updater</a></h2>
-                            <p>
-                                Populates a select element with different options depending on the
-                                state of a radio button.
-                            </p>
-                        </li>
-                        <li>
-                            <h2 class="display-6">
-                                <a href="email_or_phone.html">Email or Phone Form</a></h2>
-                            <p>
-                                Requires that the user enter at least one of email or phone values.
-                            </p>
-                        </li>
-                    </ul>
+                    <h1 class="display-5 mb-3">Python REPL in the browser</h1>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text">Python REPL</label>
+                        <input
+                            type="text"
+                            id="repl"
+                            name="repl"
+                            class="form-control base-input"
+                            placeholder="Loading ..... hold your horses!"
+                            disabled
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Output</label>
+                        <textarea 
+                            class="form-control"
+                            id="output"
+                            rows="10"
+                            readonly
+                        ></textarea>
+                      </div>
                 </div>
             </div>
         </main>
 
-        <input type="hidden" value="assets/js/hex_converter.js" />
+        
 
         <!-- Bootstrap Javascript from CDN -->
         <script
@@ -116,6 +109,7 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
-
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.26.3/full/pyodide.js"></script>
+        <script src="assets/js/pyodide_expt.js"></script>
     </body>
 </html>

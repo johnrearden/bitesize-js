@@ -1,9 +1,15 @@
 body {
-    margin-top: 56px;
+    margin-top: 70px;
 }
 
 pre {
     margin-top: 100px;
+}
+
+form {
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .comment-annotation {
@@ -24,4 +30,6 @@ pre {
 .hide {
     display: none;
 }
+
+
 

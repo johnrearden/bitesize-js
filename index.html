@@ -59,57 +59,30 @@
                 </div>
             </nav>
         </head>
-        <main class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6">
-                    <h1 class="display-5 mt-5 mb-3">Base Converter</h1>
-                    <form class="form-floating w-75">
-                        <div class="mb-3">
-                            <label for="decimal">Decimal</label>
-                            <input
-                                type="text"
-                                id="decimal"
-                                name="decimal"
-                                class="form-control base-input"
-                                data-base="10"
-                                valid-chars="0123456789"
-                            />
-                        </div>
-                        <div class="mb-3">
-                            <label for="hexadecimal">Hexadecimal</label>
-                            <input
-                                type="text"
-                                id="hexadecimal"
-                                name="hexadecimal"
-                                class="form-control base-input"
-                                data-base="16"
-                                valid-chars="0123456789abcdef"
-                            />
-                            <label for="binary">Binary</label>
-                            <input
-                                type="text"
-                                id="binary"
-                                name="binary"
-                                class="form-control base-input"
-                                data-base="2"
-                                valid-chars="01"
-                            />
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <hr class="mt-5" />
-
-            <div class="row mt-5">
-                <div class="col-6">
-                    <h2 class="display-6 d-inline-block">JS Source Code</h2>
-                    <button class="btn toggle-js">Toggle Comments</button>
-                    <pre><code class="language-js" id="code-display-js"></code></pre>
-                </div>
-                <div class="col-6">
-                    <h2 class="display-6 d-inline-block">HTML Source Code</h2>
-                    <pre><code class="language-markup" id="code-display-html"></code></pre>
+        <main class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <h1 class="display-5 mb-3">Click to view page and source code together</h1>
+                    <ul>
+                        <li>
+                            <h2 class="display-6">
+                                <a href="hex_converter.html">Hex Converter</a></h2>
+                            <p>
+                                Demonstrates the restriction of user input to a
+                                selection of allowed characters, and updating of
+                                one input based on changes made by the user in
+                                another.
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="display-6">
+                                <a href="select_element_updater.html">Select Element Updater</a></h2>
+                            <p>
+                                Populates a select element with different options depending on the
+                                state of a radio button.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>
@@ -123,11 +96,5 @@
             crossorigin="anonymous"
         ></script>
 
-        <!-- Prism js (downloaded)-->
-        <script src="assets/js/code_rendering/prism.js"></script>
-
-        <!-- Our own script -->
-        <script src="assets/js/hex_converter.js"></script>
-        <script src="assets/js/code_rendering/comment_annotations.js"></script>
     </body>
 </html>

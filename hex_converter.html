@@ -11,7 +11,6 @@
             crossorigin="anonymous"
         />
         <link href="assets/css/prism_okadia.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/f2f8e80db6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
@@ -44,10 +43,16 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Hex Converter</a>
+                                <a class="nav-link" href="index.html" active
+                                    >Hex Converter</a
+                                >
                             </li>
-                            <li class="nav-item"></li>
-                                <a class="nav-link" href="select_element_updater.html" active>Select Element</a>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="select_element_updater.html"
+                                    >Select Element</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -57,47 +62,59 @@
         <main class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
-                    <h1 class="display-5 mt-5">Select Element Updater</h1>
-                    <form class="form-floating">
-                        <h2 class="display-6 mt-5">Choose your vehicle</h2>
-                        <div class="form-check mt-2">
-                            <input class="form-check-input" type="radio" name="vehicle-type" id="car-radio-button" checked>
-                            <label class="form-check-label" for="car-radio-button">
-                              Car
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="vehicle-type" id="van-radio-button" >
-                            <label class="form-check-label" for="van-radio-button">
-                              Van
-                            </label>
-                          </div>
-        
-                          <select class="form-select mt-3" id="colour-selector" aria-label="Default select example">
-                            <option selected>Choose a colour for your car</option>
-                          </select>
-        
-                          <p id="output-temp"></p>
+                    <h1 class="display-5 mt-5 mb-3">Base Converter</h1>
+                    <form class="form-floating w-75">
+                        <div class="mb-3">
+                            <label for="decimal">Decimal</label>
+                            <input
+                                type="text"
+                                id="decimal"
+                                name="decimal"
+                                class="form-control base-input"
+                                data-base="10"
+                                valid-chars="0123456789"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="hexadecimal">Hexadecimal</label>
+                            <input
+                                type="text"
+                                id="hexadecimal"
+                                name="hexadecimal"
+                                class="form-control base-input"
+                                data-base="16"
+                                valid-chars="0123456789abcdef"
+                            />
+                            <label for="binary">Binary</label>
+                            <input
+                                type="text"
+                                id="binary"
+                                name="binary"
+                                class="form-control base-input"
+                                data-base="2"
+                                valid-chars="01"
+                            />
+                        </div>
                     </form>
                 </div>
             </div>
 
-            <hr class="mt-5">
+            <hr class="mt-5" />
 
             <div class="row mt-5">
-                <div class="col-12 col-lg-6">
+                <div class="col-6">
                     <h2 class="display-6 d-inline-block">JS Source Code</h2>
+                    <button class="btn toggle-js">Toggle Comments</button>
                     <pre><code class="language-js" id="code-display-js"></code></pre>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-6">
                     <h2 class="display-6 d-inline-block">HTML Source Code</h2>
                     <pre><code class="language-markup" id="code-display-html"></code></pre>
                 </div>
             </div>
-
-            <input type="hidden" value="assets/js/select_element_update.js">
-            
         </main>
+
+        <input type="hidden" value="assets/js/hex_converter.js" />
 
         <!-- Bootstrap Javascript from CDN -->
         <script
@@ -110,8 +127,7 @@
         <script src="assets/js/code_rendering/prism.js"></script>
 
         <!-- Our own script -->
-        <script src="assets/js/select_element_update.js"></script>
+        <script src="assets/js/hex_converter.js"></script>
         <script src="assets/js/code_rendering/comment_annotations.js"></script>
-
     </body>
 </html>

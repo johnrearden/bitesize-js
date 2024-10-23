@@ -1,29 +1,73 @@
-:root {
-    box-sizing: border-box;
-}
-
 body {
-    padding: 0;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.outer {
-    background-color: lightblue;
-    min-height: 100vh;
+header {
+    background-color: wheat;
     display: flex;
-    justify-content: center;
+}
+header div {
     align-items: center;
 }
-
-.inner {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1rem solid red;
+span {
+    text-align: center;
 }
-
-.hide {
-    display: none;
+#logo {
+    width: 25vw;
+}
+h1 {
+    font-size: 2rem;
+    flex: 1;
+    text-align: center;
+}
+footer {
+    background-color: wheat;
+    text-align: center;
+}
+nav ul {
+    list-style-type:none;
+    background-color: wheat;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    background: url(https://i.postimg.cc/tRzyyFzX/meadow-5648849-1280.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+nav ul li {
+    font-weight: 700;
+    display: inline;
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+nav ul li:hover {
+    background-color: brown;
+    color: aliceblue;
+    height: 50px;
+    vertical-align: middle;;
+    background-image: url(https://i.postimg.cc/KYdLZ6xg/coffee-618858-1280.jpg);
+    background-size: cover;
+    border: 5px white dashed;
+}
+ul a:hover{
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    vertical-align: center;
+}
+.banner {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
 }

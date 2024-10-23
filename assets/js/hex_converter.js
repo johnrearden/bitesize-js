@@ -2,6 +2,9 @@
 // Event listener fires when the HTML content has loaded.
 document.addEventListener("DOMContentLoaded", () => {
 
+    const secret_key = process.env.API_KEY;
+    const secret_variable = process.env.API_VARIABLE;
+    console.log('secrets', secret_key, secret_variable);
 
     const inputs = document.getElementsByClassName("base-input");
     for (let input of inputs) {

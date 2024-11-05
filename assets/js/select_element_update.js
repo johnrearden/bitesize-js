@@ -1,4 +1,3 @@
-
 // The possible colours for each type of vehicle
 const COLOURS = {
     car: [
@@ -12,6 +11,7 @@ const COLOURS = {
         "Golden Ember",
     ],
     van: ["White", "Navy"],
+    jeep: ["Dark Grey", "Dark Green"],
 };
 
 // Event listener fires when the HTML content has loaded.
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add an event listener, listening for the 'change' event, to each button
     for (let button of vehicleButtons) {
+        console.log(vehicleButtons);
         button.addEventListener("change", () => {
             const vehicle = button.id.split("-")[0];
             updateColourOptions(vehicle);
